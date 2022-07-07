@@ -15,6 +15,9 @@ import NoScreen from './screens/NoScreen';
 import FooterBar from './components/FooterBar';
 import SingleProductScreen from './screens/SingleProductScreen';
 
+// wrapper cuz useParams() cannot be used in class component
+// directly, so wrap it in a functional component and
+// pass it in as a prop
 const ProductIdWrapper = () =>{
   // using the value of ':productId' in the params
   const {productId} = useParams();
