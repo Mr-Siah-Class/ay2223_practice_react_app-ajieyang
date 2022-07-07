@@ -1,6 +1,6 @@
 import React from "react";
 
-class HomeScreen extends React.Component{
+class SingleProductScreen extends React.Component{
     constructor(){
         super()
     }
@@ -8,10 +8,10 @@ class HomeScreen extends React.Component{
     render(){
         return(
             <div className='Main'>
-                <h1>HomeScreen</h1>
+                <h1>Product {this.props.productId}</h1>
             </div>
-        )
+        );
     }
 }
 
-export default HomeScreen;
+export default SingleProductScreen;
